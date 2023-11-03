@@ -1,0 +1,57 @@
+<html>
+	
+    <head>
+        <meta charset="UTF-8" />
+        <title>Mon jeu</title>
+
+        <link rel="stylesheet" type="text/css" href="styles.min.css">
+		
+		<!-- Chargement des scripts commun -->
+		<!-- NE PAS MODIFIER -->
+		<script src = "phaser.min.js"></script>
+		<!-- <script src = "setCouleurDesLumieres.js"></script> -->
+		<script src = "https://odytek.com/scriptsCommun/Manette.min.js"></script>
+		<script src = "https://odytek.com/scriptsCommun/infoJoueurs.min.js"></script>
+
+		<!-- Chargement des états du jeu -->
+		<script src = "etats/chargement.js"></script>
+		<script src = "etats/menu.js"></script>
+		<script src = "etats/jeu.js"></script>
+		<script src = "https://odytek.com/scriptsCommun/records.min.js"></script>
+
+		<script src = "https://odytek.com/scriptsCommun/bootJeu.min.js"></script>
+		<script src = "scripts.min.js"></script>
+		
+    </head>
+	
+	<body>
+        
+        <div id = 'choix'>
+
+            <h1>Arcade ODYTEK SDK</h1>
+            <h3>Version 0.4.3</h3>
+            <br>
+            <img src="arcade.png">
+            
+            <p> Choisis le nombre de joueurs.<br>
+            
+            <label>1</label>
+                <input type = "radio" name = "joueurs" value = "1" CHECKED >
+                <br>
+            <label>2</label>
+                <input type = "radio" name = "joueurs" value = "2" >        
+                <br>
+            <label>3</label>
+                <input type = "radio" name = "joueurs" value = "3" >  
+                <br>
+            <label>4</label>
+                <input type = "radio" name = "joueurs" value = "4" >  
+                <br>
+                <br>
+            <button onclick="chargementJoueurs()" >Commencer</button></p>
+        
+        </div>
+		
+	</body>
+	
+</html>
